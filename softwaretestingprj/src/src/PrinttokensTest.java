@@ -8,11 +8,21 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void open_character_stream() {
+        Printtokens pt = new Printtokens();
+        BufferedReader br = pt.open_character_stream(null);
+        assertNotNull(br, "BufferedReader should not be null when input is null");
 
     }
 
     @org.junit.jupiter.api.Test
     void get_char() {
+        //Getting errors
+        /*
+        Printtokens pt = new Printtokens();
+        BufferedReader br = pt.open_character_stream(null);
+        assertFalse(pt.get_char(null), "Should print out the statement given");
+        assertTrue(pt.get_char('#filename'), "Should print out some sort of file");
+         */
     }
 
     @org.junit.jupiter.api.Test
@@ -36,11 +46,79 @@ class PrinttokensTest {
     @org.junit.jupiter.api.Test
     void get_token() {
         //complicated method 5
+        /*
+        int i = 0, j;
+        int id = 0;
+        int res = 0;
+        char ch = '\0';
+        BufferedReader br = new BufferedReader(new StringReader(""));
+        Printtokens t = new Printtokens();
+
+        assertEquals(-1, res, "return NULL");
+        assertEquals('\0', ch, "return NULL");
+        assertEquals(0, id  , "return NULL");
+
+        assertEquals(40, res, "return (");
+        assertEquals('(', ch, "return (");
+        assertEquals(0, id  , "return (");
+
+
+        assertNull(t.get_token(br), "After it's read through, it should return NULL at the end, noting EOF");
+
+         */
     }
 
     @org.junit.jupiter.api.Test
-    void is_token_end() {
+    void is_token_end_eof() {
+        int str_com_id = 1;
+        int res = -1;
+        assertTrue(Printtokens.is_token_end(str_com_id,res));
     }
+    @org.junit.jupiter.api.Test
+    void is_token_end_stspace() {
+        int str_com_id = 0;
+        char c = '\t';
+        int res = (int)c;
+        assertTrue(Printtokens.is_token_end(str_com_id,res));
+    }
+    @org.junit.jupiter.api.Test
+    void is_token_end_sfspace() {
+        int str_com_id = 1;
+        int res = 97;
+        assertFalse(Printtokens.is_token_end(str_com_id,res));
+    }
+    @org.junit.jupiter.api.Test
+    void is_token_end_ctspace() {
+        int str_com_id = 2;
+        char c = '\n';
+        int res = (int)c;
+        assertTrue(Printtokens.is_token_end(str_com_id,res));
+    }
+    @org.junit.jupiter.api.Test
+    void is_token_end_cfspace() {
+        int str_com_id = 2;
+        int res = 97;
+        assertFalse(Printtokens.is_token_end(str_com_id,res));
+    }
+    @org.junit.jupiter.api.Test
+    void is_token_end_spec_symbol() {
+        int str_com_id = 0;
+        int res = 40;
+        assertTrue(Printtokens.is_token_end(str_com_id,res));
+    }
+    @org.junit.jupiter.api.Test
+    void is_token_end_space59() {
+        int str_com_id = 0;
+        int res = 59;
+        assertTrue(Printtokens.is_token_end(str_com_id,res));
+    }
+    @org.junit.jupiter.api.Test
+    void is_token_end_returnfalse() {
+        int str_com_id = 0;
+        int res = 97;
+        assertFalse(Printtokens.is_token_end(str_com_id,res));
+    }
+
 
     @org.junit.jupiter.api.Test
     void token_type_keyword() {
@@ -194,25 +272,73 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void is_num_constant() {
+        String str1 = null;
+        String str2 = "#ab";
+        String str3 = "123";
+        String str4 = "12a3";
+        assertFalse(Printtokens.is_num_constant(str1));
+        assertFalse(Printtokens.is_num_constant(str2));
+        assertTrue(Printtokens.is_num_constant(str3));
+        assertFalse(Printtokens.is_num_constant(str4));
     }
 
     @org.junit.jupiter.api.Test
     void is_str_constant() {
+        String str1 = "abs";
+        String str2 = "\"\"";
+        String str3 = "\"The fox\"";
+        String str4 = "\"No quotes on the right";
+        String str5 = ",";
+        assertFalse(Printtokens.is_str_constant(str1));
+        assertTrue(Printtokens.is_str_constant(str2));
+        assertTrue(Printtokens.is_str_constant(str3));
+        assertFalse(Printtokens.is_str_constant(str4));
+        assertFalse(Printtokens.is_str_constant(str5));
     }
 
     @org.junit.jupiter.api.Test
     void is_identifier() {
+        assertTrue(Printtokens.is_identifier("identifier"), "'identifier' should be an identifier");
+        assertFalse(Printtokens.is_identifier("123"), "'123' should not be an identifier");
     }
 
     @org.junit.jupiter.api.Test
     void print_spec_symbol() {
+        //This needs to be in the form of a test
+        /*
+        Printtokens.print_spec_symbol("(");
+        Printtokens.print_spec_symbol(")");
+        Printtokens.print_spec_symbol("[");
+        Printtokens.print_spec_symbol("]");
+        Printtokens.print_spec_symbol("'");
+        Printtokens.print_spec_symbol("`");
+        Printtokens.print_spec_symbol("(");
+
+         */
     }
 
     @org.junit.jupiter.api.Test
     void is_spec_symbol() {
+        assertTrue(Printtokens.is_spec_symbol('('), " '(' should be a special symbol");
+        assertTrue(Printtokens.is_spec_symbol(')'), " ')' should be a special symbol");
+        assertTrue(Printtokens.is_spec_symbol('['), " '[' should be a special symbol");
+        assertTrue(Printtokens.is_spec_symbol(']'), " ']' should be a special symbol");
+        assertTrue(Printtokens.is_spec_symbol('/'), " '/' should be a special symbol");
+        assertTrue(Printtokens.is_spec_symbol('`'), " '`' should be a special symbol");
+        assertTrue(Printtokens.is_spec_symbol(','), " ',' should be a special symbol");
+        assertFalse(Printtokens.is_spec_symbol('#'), " '#' should not be a special symbol");
     }
 
     @org.junit.jupiter.api.Test
     void main_test() {
+        //getting errors
+        /*
+        var main = new Printtokens();
+        assertFalse(Printtokens.main(null), "Should print out the statement given");
+        assertTrue(Printtokens.main(""), "Should exit out of the system");
+        assertTrue(Printtokens.main('a'), "Should exit out of the system");
+        assertTrue(Printtokens.main('#filename'), "Should exit out of the system");
+
+         */
     }
 }
