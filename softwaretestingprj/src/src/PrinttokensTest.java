@@ -304,17 +304,37 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void print_spec_symbol() {
-        //This needs to be in the form of a test
-        /*
-        Printtokens.print_spec_symbol("(");
-        Printtokens.print_spec_symbol(")");
-        Printtokens.print_spec_symbol("[");
-        Printtokens.print_spec_symbol("]");
-        Printtokens.print_spec_symbol("'");
-        Printtokens.print_spec_symbol("`");
-        Printtokens.print_spec_symbol("(");
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
 
-         */
+        Printtokens.print_spec_symbol("(");
+        assertEquals("lparen.\n", outContent.toString());
+        outContent.reset();
+
+        Printtokens.print_spec_symbol(")");
+        assertEquals("rparen.\n", outContent.toString());
+        outContent.reset();
+
+        Printtokens.print_spec_symbol("[");
+        assertEquals("lsquare.\n", outContent.toString());
+        outContent.reset();
+
+        Printtokens.print_spec_symbol("]");
+        assertEquals("rsquare.\n", outContent.toString());
+        outContent.reset();
+
+        Printtokens.print_spec_symbol("'");
+        assertEquals("quote.\n", outContent.toString());
+        outContent.reset();
+
+        Printtokens.print_spec_symbol("`");
+        assertEquals("bquote.\n", outContent.toString());
+        outContent.reset();
+
+        Printtokens.print_spec_symbol(",");
+        assertEquals("comma.\n", outContent.toString());
+
+        System.setOut(System.out);
     }
 
     @org.junit.jupiter.api.Test
@@ -331,14 +351,14 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void main_test() {
-        //getting errors
-        /*
-        var main = new Printtokens();
-        assertFalse(Printtokens.main(null), "Should print out the statement given");
-        assertTrue(Printtokens.main(""), "Should exit out of the system");
-        assertTrue(Printtokens.main('a'), "Should exit out of the system");
-        assertTrue(Printtokens.main('#filename'), "Should exit out of the system");
+        Printtokens.main(new String[]{}); // Test with no arguments
 
-         */
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+
+        Printtokens.main(new String[]{"Printtokens.java"});
+        assertTrue(outContent.toString().contains("BufferedReader should not be null"));
+
+        System.setOut(System.out); // Reset System.out
     }
 }
