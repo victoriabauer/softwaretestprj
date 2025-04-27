@@ -213,6 +213,6 @@ class PrinttokensTest {
     }
 
     @org.junit.jupiter.api.Test
-    void main() {
+    void main_test() {
     }
 }

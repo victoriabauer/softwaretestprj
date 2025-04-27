@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="set up 2.0">
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/testfile1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestprj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestprj.iml" afterDir="false" />
-    </list>
+    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="method:3,4,7,8,9,10,11" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745719189879</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="method:3,4,7,8,9,10,11">
+      <option name="closed" value="true" />
+      <created>1745727167455</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745727167455</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +130,7 @@
     <MESSAGE value="'Test file made'" />
     <MESSAGE value="unversioned files" />
     <MESSAGE value="set up 2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up 2.0" />
+    <MESSAGE value="method:3,4,7,8,9,10,11" />
+    <option name="LAST_COMMIT_MESSAGE" value="method:3,4,7,8,9,10,11" />
   </component>
 </project>
