@@ -13,6 +13,10 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void get_char() {
+        Printtokens pt = new Printtokens();
+        BufferedReader br = pt.open_character_stream(null);
+        assertFalse(Printtokens.get_char(null), "Should print out the statement given");
+        assertTrue(Printtokens.get_char('#filename'), "Should print out some sort of file");
     }
 
     @org.junit.jupiter.api.Test
@@ -25,7 +29,23 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void get_token() {
-    }
+        int i = 0, j;
+        int id = 0;
+        int res = 0;
+        char ch = '\0';
+        BufferedReader br = new BufferedReader(new StringReader(input));
+        Printtokens t = new Printtokens();
+
+        assertEquals(-1, res, "return NULL");
+        assertEquals('\0', ch, "return NULL");
+        assertEquals(0, id  , "return NULL");
+
+        assertEquals(40, res, "return (");
+        assertEquals('(', ch, "return (");
+        assertEquals(0, id  , "return (");
+
+
+        assertNull(t.get_token(br), "After it's read through, it should return NULL at the end, noting EOF");
 
     @org.junit.jupiter.api.Test
     void is_token_end() {
@@ -54,7 +74,7 @@ class PrinttokensTest {
     @org.junit.jupiter.api.Test
     void is_num_constant() {
         var numConstant = new Printtokens();
-        String str1 = NULL;
+        String str1 = null;
         String str2 = '#ab';
         String str3 = '123';
         String str4 = '12a3';
@@ -116,7 +136,7 @@ class PrinttokensTest {
     @org.junit.jupiter.api.Test
     void main() {
         var main = new Printtokens();
-        assertFalse(Printtokens.main(NULL), "Should print out the statement given");
+        assertFalse(Printtokens.main(null), "Should print out the statement given");
         assertTrue(Printtokens.main(""), "Should exit out of the system");
         assertTrue(Printtokens.main('a'), "Should exit out of the system");
         assertTrue(Printtokens.main('#filename'), "Should exit out of the system");
