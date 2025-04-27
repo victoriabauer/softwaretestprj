@@ -16,13 +16,17 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void get_char() {
-        //Getting errors
-        /*
         Printtokens pt = new Printtokens();
-        BufferedReader br = pt.open_character_stream(null);
-        assertFalse(pt.get_char(null), "Should print out the statement given");
-        assertTrue(pt.get_char('#filename'), "Should print out some sort of file");
-         */
+        BufferedReader br = new BufferedReader(new StringReader("testing"));
+        assertEquals('t', pt.get_char(br), "Should return the first character 't'");
+        assertEquals('e', pt.get_char(br), "Should return the second character 'e'");
+        assertEquals('s', pt.get_char(br), "Should return the third character 's'");
+        assertEquals('t', pt.get_char(br), "Should return the fourth character 't'");
+        assertEquals('i', pt.get_char(br), "Should return the second character 'i'");
+        assertEquals('n', pt.get_char(br), "Should return the third character 'n'");
+        assertEquals('g', pt.get_char(br), "Should return the fourth character 'g'");
+        assertEquals(-1, pt.get_char(br), "Should return -1 for EOF");
+
     }
 
     @org.junit.jupiter.api.Test
