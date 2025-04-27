@@ -6,6 +6,7 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void open_character_stream() {
+
     }
 
     @org.junit.jupiter.api.Test
