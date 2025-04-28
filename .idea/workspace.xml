@@ -4,26 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="method 5 and test files">
+    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="Created Resource folder for all txt files">
+      <change afterPath="$PROJECT_DIR$/TestResults1_PrinttokensTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/testfile1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/testfile1.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -86,6 +77,9 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\viceb\IdeaProjects\softwaretestprj\softwaretestingprj\Resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
@@ -156,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745805034155</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Created Resource folder for all txt files">
+      <option name="closed" value="true" />
+      <created>1745858417379</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745858417379</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +179,7 @@
     <MESSAGE value="kennan fixed the print_spec_symbol and main" />
     <MESSAGE value="kennan fixed the get_char" />
     <MESSAGE value="method 5 and test files" />
-    <option name="LAST_COMMIT_MESSAGE" value="method 5 and test files" />
+    <MESSAGE value="Created Resource folder for all txt files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Resource folder for all txt files" />
   </component>
 </project>
