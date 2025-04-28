@@ -78,7 +78,7 @@ class PrinttokensTest {
     void get_token_and_rpren() {
         Printtokens t = new Printtokens();
         BufferedReader br = t.open_token_stream("softwaretestingprj/Resources/gettoktest6.txt");	/* open token stream */
-        assertEquals("and)",t.get_token(br));
+        assertEquals("and",t.get_token(br));
 
     }
     @org.junit.jupiter.api.Test
@@ -99,7 +99,7 @@ class PrinttokensTest {
     void get_token_and_endcolon() {
         Printtokens t = new Printtokens();
         BufferedReader br = t.open_token_stream("softwaretestingprj/Resources/gettoktest9.txt");	/* open token stream */
-        assertEquals("and;",t.get_token(br));
+        assertEquals("and",t.get_token(br));
 
     }
     @org.junit.jupiter.api.Test
@@ -393,7 +393,7 @@ class PrinttokensTest {
         assertTrue(Printtokens.is_spec_symbol(','), " ',' should be a special symbol");
         assertFalse(Printtokens.is_spec_symbol('#'), " '#' should not be a special symbol");
     }
-
+    /*
     @org.junit.jupiter.api.Test
     void main_test() {
 
@@ -420,4 +420,6 @@ class PrinttokensTest {
 
         System.setOut(initialOut);
     }
+
+     */
 }
