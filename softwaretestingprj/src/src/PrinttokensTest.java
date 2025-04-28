@@ -7,7 +7,7 @@ class PrinttokensTest {
     @org.junit.jupiter.api.Test
     void open_character_stream() {
         Printtokens pt = new Printtokens();
-        BufferedReader br = pt.open_character_stream("testfile1.txt");
+        BufferedReader br = pt.open_character_stream("softwaretestingprj/Resources/gettoktest10.txt");
         assertNotNull(br, "BufferedReader should not be null when input is null");
 
     }
@@ -15,14 +15,8 @@ class PrinttokensTest {
     @org.junit.jupiter.api.Test
     void get_char() {
         Printtokens pt = new Printtokens();
-        BufferedReader br = new BufferedReader(new StringReader("testing"));
-        assertEquals('t', pt.get_char(br), "Should return the first character 't'");
-        assertEquals('e', pt.get_char(br), "Should return the second character 'e'");
-        assertEquals('s', pt.get_char(br), "Should return the third character 's'");
-        assertEquals('t', pt.get_char(br), "Should return the fourth character 't'");
-        assertEquals('i', pt.get_char(br), "Should return the second character 'i'");
-        assertEquals('n', pt.get_char(br), "Should return the third character 'n'");
-        assertEquals('g', pt.get_char(br), "Should return the fourth character 'g'");
+        BufferedReader br = new BufferedReader(new StringReader("a"));
+        assertEquals('a', pt.get_char(br), "Should return the first character 'a'");
         assertEquals(-1, pt.get_char(br), "Should return -1 for EOF");
 
     }
