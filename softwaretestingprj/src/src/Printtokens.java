@@ -343,7 +343,7 @@ public class Printtokens{
 	           else
 	           i++;
 	         }               /* end WHILE */
-	     return true;	
+	     return false;
 	    }
 	  else
 	    return false;       /* other return FALSE */
@@ -387,7 +387,7 @@ public class Printtokens{
 	/*************************************************/
 	static void print_spec_symbol(String str)
 	{
-		if      (str.equals(")")) 
+		if(str.equals("("))
 	    {
 	         
 	             System.out.print("lparen.\n");
