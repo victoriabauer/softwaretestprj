@@ -7,7 +7,7 @@ class PrinttokensTest {
     @org.junit.jupiter.api.Test
     void open_character_stream() {
         Printtokens pt = new Printtokens();
-        BufferedReader br = pt.open_character_stream(null);
+        BufferedReader br = pt.open_character_stream("testfile1.txt");
         assertNotNull(br, "BufferedReader should not be null when input is null");
 
     }
@@ -320,13 +320,14 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void is_num_constant() {
-        String str1 = null;
         String str2 = "#ab";
         String str3 = "123";
-        String str4 = "12a3";
+        String str4 = "1a3";
+
         assertFalse(Printtokens.is_num_constant(str2));
         assertTrue(Printtokens.is_num_constant(str3));
         assertFalse(Printtokens.is_num_constant(str4));
+        assertFalse(Printtokens.is_num_constant(null));
     }
 
     @org.junit.jupiter.api.Test
@@ -345,8 +346,11 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void is_identifier() {
-        assertTrue(Printtokens.is_identifier("identifier"), "'identifier' should be an identifier");
-        assertFalse(Printtokens.is_identifier("123"), "'123' should not be an identifier");
+        assertTrue(Printtokens.is_identifier("a"), "'a' should be an identifier");
+        assertTrue(Printtokens.is_identifier("a"), "'a' should be an identifier");
+        assertFalse(Printtokens.is_identifier("#ab"), "'#ab' should be an identifier");
+        assertFalse(Printtokens.is_identifier("#ab"), "'#ab' should be an identifier");
+        assertFalse(Printtokens.is_identifier(null), "'null' should not be an identifier");
     }
 
     @org.junit.jupiter.api.Test
@@ -398,15 +402,29 @@ class PrinttokensTest {
     /*
     @org.junit.jupiter.api.Test
     void main_test() {
-        Printtokens.main(new String[]{});
 
+        PrintStream initialOut = System.out;
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        Printtokens.main(new String[]{"Printtokens.java"});
+        Printtokens.main(new String[]{});
+        assertTrue(outContent.toString().contains("BufferedReader should not be null"));
+        outContent.reset();
+
+        Printtokens.main(new String[]{"a"});
+        assertTrue(outContent.toString().contains("BufferedReader should not be null"));
+        outContent.reset();
+
+
+        Printtokens.main(new String[]{""});
+        assertTrue(outContent.toString().contains("BufferedReader should not be null"));
+        outContent.reset();
+
+
+        Printtokens.main(new String[]{"testfile1.java"});
         assertTrue(outContent.toString().contains("BufferedReader should not be null"));
 
-        System.setOut(System.out);
+        System.setOut(initialOut);
     }
 
      */

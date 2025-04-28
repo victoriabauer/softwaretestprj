@@ -301,16 +301,20 @@ public class Printtokens{
 	/*************************************/
 	static boolean is_num_constant(String str)
 	{
-	  int i=1;
-	  
-	  if ( Character.isDigit(str.charAt(0))) 
+	  int i=0;
+
+		if (str == null || str.isEmpty()) {
+			return false;
+		}
+
+		if ( Character.isDigit(str.charAt(0)))
 	    {
 		while ( i < str.length() && str.charAt(i) != '\0' )  
 	      {
-		   if(Character.isDigit(str.charAt(i+1)))
-	         i++;
+		   if(Character.isDigit(str.charAt(i)))
+			   return false;
 	       else
-	         return false;
+			   i++;
 	      }                         /* end WHILE */
 	    return true;
 	    }
@@ -347,7 +351,11 @@ public class Printtokens{
 	/*************************************/
 	static boolean is_identifier(String str)
 	{
-	  int i=1; 
+	  int i=0;
+
+		if (str == null || str.isEmpty()) {
+			return false;
+		}
 
 	  if ( Character.isLetter(str.charAt(0)) ) 
 	     {
@@ -358,10 +366,10 @@ public class Printtokens{
 	            else
 	               return false;
 	           }      /* end WHILE */
-		    return false; 
+		    return true;
 	     }
 	  else
-		return true; 
+		return false;
 	}
 	
 	
