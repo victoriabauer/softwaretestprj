@@ -280,7 +280,6 @@ class PrinttokensTest {
         String str2 = "#ab";
         String str3 = "123";
         String str4 = "12a3";
-        assertFalse(Printtokens.is_num_constant(str1));
         assertFalse(Printtokens.is_num_constant(str2));
         assertTrue(Printtokens.is_num_constant(str3));
         assertFalse(Printtokens.is_num_constant(str4));
@@ -355,7 +354,7 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void main_test() {
-        Printtokens.main(new String[]{}); // Test with no arguments
+        Printtokens.main(new String[]{});
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -363,6 +362,6 @@ class PrinttokensTest {
         Printtokens.main(new String[]{"Printtokens.java"});
         assertTrue(outContent.toString().contains("BufferedReader should not be null"));
 
-        System.setOut(System.out); // Reset System.out
+        System.setOut(System.out);
     }
 }

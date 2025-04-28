@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="kennan fixed the print_spec_symbol and main">
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="kennan fixed the get_char" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745778609914</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="kennan fixed the get_char">
+      <option name="closed" value="true" />
+      <created>1745778774891</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745778774891</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +146,7 @@
     <MESSAGE value="'random'" />
     <MESSAGE value="kennan's code added 1.0" />
     <MESSAGE value="kennan fixed the print_spec_symbol and main" />
-    <option name="LAST_COMMIT_MESSAGE" value="kennan fixed the print_spec_symbol and main" />
+    <MESSAGE value="kennan fixed the get_char" />
+    <option name="LAST_COMMIT_MESSAGE" value="kennan fixed the get_char" />
   </component>
 </project>
