@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="kennan fixed the get_char">
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="method 5 and test files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/gettoktest9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/testfile1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/Resources/testfile1.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +48,13 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/victoriabauer/softwaretestprj.git&quot;,
-    &quot;accountId&quot;: &quot;bafc5e6a-b1fe-423a-90b6-9c9f9793cea5&quot;
+    &quot;url&quot;: &quot;https://github.com/victoriabauer/softwaretestprj&quot;,
+    &quot;accountId&quot;: &quot;3dc8a0fb-0fbb-4ffc-b0c1-02504b1b4e32&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -65,6 +68,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.PrinttokensTest.executor&quot;: &quot;Run&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
@@ -75,6 +79,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
@@ -86,6 +91,7 @@
       <recent name="" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="" />
@@ -142,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745778774891</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="method 5 and test files">
+      <option name="closed" value="true" />
+      <created>1745805034155</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745805034155</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +176,7 @@
     <MESSAGE value="kennan's code added 1.0" />
     <MESSAGE value="kennan fixed the print_spec_symbol and main" />
     <MESSAGE value="kennan fixed the get_char" />
-    <option name="LAST_COMMIT_MESSAGE" value="kennan fixed the get_char" />
+    <MESSAGE value="method 5 and test files" />
+    <option name="LAST_COMMIT_MESSAGE" value="method 5 and test files" />
   </component>
 </project>
