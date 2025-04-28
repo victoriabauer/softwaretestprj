@@ -124,7 +124,7 @@ class PrinttokensTest {
     }
     @org.junit.jupiter.api.Test
     void is_token_end_stspace() {
-        int str_com_id = 0;
+        int str_com_id = 1;
         char c = '\t';
         int res = (int)c;
         assertTrue(Printtokens.is_token_end(str_com_id,res));
@@ -205,13 +205,13 @@ class PrinttokensTest {
     }
     @org.junit.jupiter.api.Test
     void token_type_error() {
-        String tok = null;
+        String tok = "3a";
         assertEquals(0,Printtokens.token_type(tok));
     }
 
     @org.junit.jupiter.api.Test
     void print_token_error() {
-        String tok = null;
+        String tok = "3a";
         Printtokens t = new Printtokens();
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -311,11 +311,11 @@ class PrinttokensTest {
 
     @org.junit.jupiter.api.Test
     void is_char_constant_true() {
-        assertTrue(Printtokens.is_keyword("#a"));
+        assertTrue(Printtokens.is_char_constant("#a"));
     }
     @org.junit.jupiter.api.Test
     void is_char_constant_false() {
-        assertFalse(Printtokens.is_keyword("#3"));
+        assertFalse(Printtokens.is_char_constant("#3"));
     }
 
     @org.junit.jupiter.api.Test

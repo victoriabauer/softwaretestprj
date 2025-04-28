@@ -206,8 +206,8 @@ public class Printtokens{
 	 if(is_identifier(tok))return(identifier);
 	 if(is_num_constant(tok))return(num_constant);
 	 if(is_str_constant(tok))return(str_constant);
-	 if(is_char_constant(tok))return(char_constant);
 	 if(is_comment(tok))return(comment);
+	 if(is_char_constant(tok))return(char_constant);
 	 return(error);                    /* else look as error token */
 	}
 	
@@ -288,7 +288,7 @@ public class Printtokens{
 	/*************************************/
 	static boolean is_char_constant(String str)
 	{
-	  if (str.length() > 2 || str.charAt(0)=='#' && Character.isLetter(str.charAt(1))) 
+	  if ((str.length() == 1 && Character.isLetter(str.charAt(0)) || (str.length() == 2 && str.charAt(0)=='#' && Character.isLetter(str.charAt(1)))))
 	     return true;
 	  else  
 	     return false;
