@@ -393,7 +393,6 @@ class PrinttokensTest {
         assertTrue(Printtokens.is_spec_symbol(','), " ',' should be a special symbol");
         assertFalse(Printtokens.is_spec_symbol('#'), " '#' should not be a special symbol");
     }
-    /*
     @org.junit.jupiter.api.Test
     void main_test() {
 
@@ -401,11 +400,7 @@ class PrinttokensTest {
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        Printtokens.main(new String[]{});
-        assertTrue(outContent.toString().contains("BufferedReader should not be null"));
-        outContent.reset();
-
-        Printtokens.main(new String[]{"a"});
+        Printtokens.main(new String[]{"softwaretestingprj/Resources/a.txt"});
         assertTrue(outContent.toString().contains("BufferedReader should not be null"));
         outContent.reset();
 
@@ -415,11 +410,9 @@ class PrinttokensTest {
         outContent.reset();
 
 
-        Printtokens.main(new String[]{"testfile1.java"});
-        assertTrue(outContent.toString().contains("BufferedReader should not be null"));
+        Printtokens.main(new String[]{"softwaretestingprj/Resources/gettoktest10.txt"});
+        assertFalse(outContent.toString().contains("BufferedReader should not be null"));
 
         System.setOut(initialOut);
     }
-
-     */
 }

@@ -468,6 +468,8 @@ public class Printtokens{
 	}
 	
 	public static void main(String[] args)  {
+
+
 		String fname = null;
 		if (args.length == 0) {	/* if not given filename,take as '""' */
 			fname = new String();
@@ -479,6 +481,11 @@ public class Printtokens{
 		}
 		Printtokens t = new Printtokens();
 		BufferedReader br = t.open_token_stream(fname);	/* open token stream */
+
+		if (br == null) {
+			System.out.println("BufferedReader should not be null");
+			System.exit(1);
+		}
 		String tok = t.get_token(br);
 		while (tok != null) {	/* take one token each time until eof */
 			t.print_token(tok);
