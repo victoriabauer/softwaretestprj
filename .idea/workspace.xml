@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="kennan fixed the get_char" />
+    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="kennan fixed the get_char">
+      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/gettoktest9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +56,7 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2wI76oNYP9FF8GEYi2FEwfgDs5k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

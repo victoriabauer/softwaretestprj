@@ -48,28 +48,74 @@ class PrinttokensTest {
     }
 
     @org.junit.jupiter.api.Test
-    void get_token() {
-        //complicated method 5
-        /*
-        int i = 0, j;
-        int id = 0;
-        int res = 0;
-        char ch = '\0';
-        BufferedReader br = new BufferedReader(new StringReader(""));
+    void get_token_emptyfile() {
         Printtokens t = new Printtokens();
+        BufferedReader br = t.open_token_stream("gettoktest1.txt");	/* open token stream */
+        assertNull(t.get_token(br));
 
-        assertEquals(-1, res, "return NULL");
-        assertEquals('\0', ch, "return NULL");
-        assertEquals(0, id  , "return NULL");
+    }
+    @org.junit.jupiter.api.Test
+    void get_token_newline_empty() {
+        Printtokens t = new Printtokens();
+        BufferedReader br = t.open_token_stream("gettoktest2.txt");	/* open token stream */
+        assertNull(t.get_token(br));
 
-        assertEquals(40, res, "return (");
-        assertEquals('(', ch, "return (");
-        assertEquals(0, id  , "return (");
+    }
+    @org.junit.jupiter.api.Test
+    void get_token_lpren() {
+        Printtokens t = new Printtokens();
+        BufferedReader br = t.open_token_stream("gettoktest3.txt");	/* open token stream */
+        assertEquals("(",t.get_token(br));
 
+    }
+    @org.junit.jupiter.api.Test
+    void get_token_one_letter() {
+        Printtokens t = new Printtokens();
+        BufferedReader br = t.open_token_stream("gettoktest4.txt");	/* open token stream */
+        assertEquals("a",t.get_token(br));
 
-        assertNull(t.get_token(br), "After it's read through, it should return NULL at the end, noting EOF");
+    }
+    @org.junit.jupiter.api.Test
+    void get_token_and_plain() {
+        Printtokens t = new Printtokens();
+        BufferedReader br = t.open_token_stream("gettoktest5.txt");	/* open token stream */
+        assertEquals("and",t.get_token(br));
 
-         */
+    }
+    @org.junit.jupiter.api.Test
+    void get_token_and_rpren() {
+        Printtokens t = new Printtokens();
+        BufferedReader br = t.open_token_stream("gettoktest6.txt");	/* open token stream */
+        assertEquals("and)",t.get_token(br));
+
+    }
+    @org.junit.jupiter.api.Test
+    void get_token_and_beginquote() {
+        Printtokens t = new Printtokens();
+        BufferedReader br = t.open_token_stream("gettoktest7.txt");	/* open token stream */
+        assertEquals("\"and",t.get_token(br));
+
+    }
+    @org.junit.jupiter.api.Test
+    void get_token_string() {
+        Printtokens t = new Printtokens();
+        BufferedReader br = t.open_token_stream("gettoktest8.txt");	/* open token stream */
+        assertEquals("\"and\"",t.get_token(br));
+
+    }
+    @org.junit.jupiter.api.Test
+    void get_token_and_endcolon() {
+        Printtokens t = new Printtokens();
+        BufferedReader br = t.open_token_stream("gettoktest9.txt");	/* open token stream */
+        assertEquals("and;",t.get_token(br));
+
+    }
+    @org.junit.jupiter.api.Test
+    void get_token_comment() {
+        Printtokens t = new Printtokens();
+        BufferedReader br = t.open_token_stream("gettoktest10.txt");	/* open token stream */
+        assertEquals(";and",t.get_token(br));
+
     }
 
     @org.junit.jupiter.api.Test
