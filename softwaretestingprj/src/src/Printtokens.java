@@ -301,25 +301,30 @@ public class Printtokens{
 	/*************************************/
 	static boolean is_num_constant(String str)
 	{
-	  int i=0;
 
 		if (str == null || str.isEmpty()) {
 			return false;
 		}
 
+		int i =0;
+
 		if ( Character.isDigit(str.charAt(0)))
 	    {
-		while ( i < str.length() && str.charAt(i) != '\0' )  
+		while ( i < str.length())
 	      {
-		   if(Character.isDigit(str.charAt(i)))
+		   if(!Character.isDigit(str.charAt(i)))
+		   {
 			   return false;
-	       else
-			   i++;
+		   }
+		   i++;
 	      }                         /* end WHILE */
 	    return true;
 	    }
 	  else
-	   return false;               /* other return FALSE */
+	  {
+		  return false;
+	  }
+	                 /* other return FALSE */
 	}
 	
 	/*************************************/
