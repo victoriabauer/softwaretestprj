@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="all method on Kennan's side is fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d13ba2b7-930d-4d9f-9117-b73172bbf86b" name="Changes" comment="working on the main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/softwaretestprj/Printtokens.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/softwaretestprj/Printtokens.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/softwaretestprj/PrinttokensTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/softwaretestprj/PrinttokensTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/Printtokens.java" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/Printtokens.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/softwaretestingprj/src/src/PrinttokensTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745872447075</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="working on the main">
+      <option name="closed" value="true" />
+      <created>1745875335832</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745875335832</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,6 +262,7 @@
     <MESSAGE value="Created Resource folder for all txt files" />
     <MESSAGE value="almost all of the method I worked on except the main has been fixed" />
     <MESSAGE value="all method on Kennan's side is fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="all method on Kennan's side is fixed" />
+    <MESSAGE value="working on the main" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on the main" />
   </component>
 </project>

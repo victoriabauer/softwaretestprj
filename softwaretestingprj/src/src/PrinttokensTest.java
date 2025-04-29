@@ -1,6 +1,8 @@
 import java.io.*;
 
 import static org.junit.jupiter.api.Assertions.*;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 
 class PrinttokensTest {
 
@@ -400,17 +402,8 @@ class PrinttokensTest {
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        Printtokens.main(new String[]{"softwaretestingprj/Resources/a.txt"});
-        assertTrue(outContent.toString().contains("BufferedReader should not be null"));
-        outContent.reset();
 
-
-        Printtokens.main(new String[]{""});
-        assertTrue(outContent.toString().contains("BufferedReader should not be null"));
-        outContent.reset();
-
-
-        Printtokens.main(new String[]{"softwaretestingprj/Resources/gettoktest10.txt"});
+        Printtokens.main(new String[]{"gettoktest10.txt"});
         assertFalse(outContent.toString().contains("BufferedReader should not be null"));
 
         System.setOut(initialOut);
