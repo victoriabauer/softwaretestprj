@@ -397,8 +397,8 @@ class PrinttokensTest {
     }
     @org.junit.jupiter.api.Test
     void main_test() {
-        String fname1 = "";
-        String fname2 = "softwaretestingprj/Resources/maintest.txt";
+        //String fname1 = "";
+        //String fname2 = "softwaretestingprj/Resources/maintest.txt";
         //Printtokens t = new Printtokens();
         //BufferedReader br = t.open_token_stream(fname);	/* open token stream */
         //Printtokens.main(new String[]{fname});
